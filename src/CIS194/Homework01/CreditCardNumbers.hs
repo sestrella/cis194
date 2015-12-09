@@ -1,4 +1,4 @@
-module CIS194.Homework01
+module CIS194.Homework01.CreditCardNumbers
   ( toDigits
   , toDigitsRev
   , doubleEveryOther
@@ -17,4 +17,9 @@ toDigitsRev :: Integer -> [Integer]
 toDigitsRev = reverse . toDigits
 
 doubleEveryOther :: [Integer] -> [Integer]
-doubleEveryOther = undefined
+doubleEveryOther = foldr everyOther []
+
+everyOther :: Integer -> [Integer] -> [Integer]
+everyOther x xs
+  | length xs `mod` 2 == 0 = x : xs
+  | otherwise              = x * 2 : xs

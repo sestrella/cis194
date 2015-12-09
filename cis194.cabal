@@ -15,7 +15,7 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     CIS194.Homework01
+  exposed-modules:     CIS194.Homework01.CreditCardNumbers
   build-depends:       base >= 4.7 && < 5
   default-language:    Haskell2010
 

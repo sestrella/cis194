@@ -1,6 +1,6 @@
-module CIS194.Homework01Spec where
+module CIS194.Homework01.CreditCardNumbersSpec where
 
-import           CIS194.Homework01
+import           CIS194.Homework01.CreditCardNumbers
 import           Test.Hspec
 
 spec :: Spec
@@ -20,6 +20,6 @@ spec = do
       toDigitsRev 1234 `shouldBe` [4, 3, 2, 1]
 
   describe "doubleEveryOther" $
-    it "doubles every other number beginning from the right" $
-      -- doubleEveryOther [8, 7, 6, 5] `shouldBe` [16, 7, 12, 5]
-      pending
+    it "doubles every other number beginning from the right" $ do
+      doubleEveryOther [8, 7, 6, 5] `shouldBe` [16, 7, 12, 5]
+      doubleEveryOther [1, 2, 3] `shouldBe` [1, 4, 3]
