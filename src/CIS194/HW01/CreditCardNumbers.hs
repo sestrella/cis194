@@ -1,4 +1,4 @@
-module CIS194.Homework01.CreditCardNumbers
+module CIS194.HW01.CreditCardNumbers
   ( toDigits
   , toDigitsRev
   , doubleEveryOther

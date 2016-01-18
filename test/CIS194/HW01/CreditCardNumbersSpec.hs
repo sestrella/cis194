@@ -1,6 +1,6 @@
-module CIS194.Homework01.CreditCardNumbersSpec where
+module CIS194.HW01.CreditCardNumbersSpec where
 
-import           CIS194.Homework01.CreditCardNumbers
+import           CIS194.HW01.CreditCardNumbers
 import           Test.Hspec
 
 spec :: Spec
